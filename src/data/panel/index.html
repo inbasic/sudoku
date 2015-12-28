@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="description" content="Sudoku is a logic-based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 sub-grids that compose the grid contains all of the digits from 1 to 9.">
+    <link rel="icon" type="image/png" href="../icons/16.png"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Sudoku : games.add0n.com</title>
+  </head>
+  <body>
+    <form>
+      <table id="t9x9" cellspacing=0>
+        <tr>
+          <td data-id="A1">
+            <input id="editor" type="number" min="1" max="9">
+          </td>
+          <td data-id="A2">.</td>
+          <td data-id="A3">.</td>
+          <td data-id="A4">.</td>
+          <td data-id="A5">.</td>
+          <td data-id="A6">.</td>
+          <td data-id="A7">.</td>
+          <td data-id="A8">.</td>
+          <td data-id="A9">.</td>
+        </tr>
+        <tr>
+          <td data-id="B1">.</td>
+          <td data-id="B2">.</td>
+          <td data-id="B3">.</td>
+          <td data-id="B4">.</td>
+          <td data-id="B5">.</td>
+          <td data-id="B6">.</td>
+          <td data-id="B7">.</td>
+          <td data-id="B8">.</td>
+          <td data-id="B9">.</td>
+        </tr>
+        <tr>
+          <td data-id="C1">.</td>
+          <td data-id="C2">.</td>
+          <td data-id="C3">.</td>
+          <td data-id="C4">.</td>
+          <td data-id="C5">.</td>
+          <td data-id="C6">.</td>
+          <td data-id="C7">.</td>
+          <td data-id="C8">.</td>
+          <td data-id="C9">.</td>
+        </tr>
+        <tr>
+          <td data-id="D1">.</td>
+          <td data-id="D2">.</td>
+          <td data-id="D3">.</td>
+          <td data-id="D4">.</td>
+          <td data-id="D5">.</td>
+          <td data-id="D6">.</td>
+          <td data-id="D7">.</td>
+          <td data-id="D8">.</td>
+          <td data-id="D9">.</td>
+        </tr>
+        <tr>
+          <td data-id="E1">.</td>
+          <td data-id="E2">.</td>
+          <td data-id="E3">.</td>
+          <td data-id="E4">.</td>
+          <td data-id="E5">.</td>
+          <td data-id="E6">.</td>
+          <td data-id="E7">.</td>
+          <td data-id="E8">.</td>
+          <td data-id="E9">.</td>
+        </tr>
+        <tr>
+          <td data-id="F1">.</td>
+          <td data-id="F2">.</td>
+          <td data-id="F3">.</td>
+          <td data-id="F4">.</td>
+          <td data-id="F5">.</td>
+          <td data-id="F6">.</td>
+          <td data-id="F7">.</td>
+          <td data-id="F8">.</td>
+          <td data-id="F9">.</td>
+        </tr>
+        <tr>
+          <td data-id="G1">.</td>
+          <td data-id="G2">.</td>
+          <td data-id="G3">.</td>
+          <td data-id="G4">.</td>
+          <td data-id="G5">.</td>
+          <td data-id="G6">.</td>
+          <td data-id="G7">.</td>
+          <td data-id="G8">.</td>
+          <td data-id="G9">.</td>
+        </tr>
+        <tr>
+          <td data-id="H1">.</td>
+          <td data-id="H2">.</td>
+          <td data-id="H3">.</td>
+          <td data-id="H4">.</td>
+          <td data-id="H5">.</td>
+          <td data-id="H6">.</td>
+          <td data-id="H7">.</td>
+          <td data-id="H8">.</td>
+          <td data-id="H9">.</td>
+        </tr>
+        <tr>
+          <td data-id="I1">.</td>
+          <td data-id="I2">.</td>
+          <td data-id="I3">.</td>
+          <td data-id="I4">.</td>
+          <td data-id="I5">.</td>
+          <td data-id="I6">.</td>
+          <td data-id="I7">.</td>
+          <td data-id="I8">.</td>
+          <td data-id="I9">.</td>
+        </tr>
+      </table>
+
+      <table id="t3x3" cellspacing=0>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+      </table>
+    </form>
+    <div>
+      <input id="reset" type="button" value="Reset">
+      <input id="solve" type="button" value="Solve">
+      <label>Guide Me<input id="guide" type="checkbox" checked=true></label>
+      <a target="_blank" href="http://add0n.com/sudoku.html">Help Page</a>
+    </div>
+
+    <span>
+      <div>
+        <p>Are you sure?</p>
+        <p dir=rtl>
+          <button data-cmd="ok">OK</button>
+          <button data-cmd="cancel">CANCEL</button>
+        </p>
+      </div>
+    </span>
+
+
+    <script src="sudoku.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: arial;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+@media all and (orientation:portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+@media all and (orientation:landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+body>form {
+  position: relative;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+body>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+@media all and (orientation:portrait) {
+  body>div {
+    flex-direction: row;
+  }
+  body>div * {
+    padding: 0 5px;
+  }
+}
+@media all and (orientation:landscape) {
+  body>div {
+    flex-direction: column;
+  }
+}
+
+table {
+  width: 100vmin;
+  min-width: 250px;
+  height: 100vmin;
+  min-height: 250px;
+  position: absolute;
+}
+@media all and (orientation:portrait) {
+  table {
+    top: calc(50vmax - 50vmin);
+  }
+}
+@media all and (orientation:landscape) {
+  table {
+    top: 0;
+    left: calc(50vmax - 50vmin);
+  }
+}
+@media (orientation:landscape) and (max-width: 130vh) {
+  body>div {
+    display: none;
+  }
+}
+
+#t9x9 {
+  background: repeating-linear-gradient(
+    45deg,
+    #eee,
+    #eee 10px,
+    #fff 10px,
+    #fff 20px
+  );
+}
+#t9x9 td {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+}
+#t9x9 td[data-type=user] {
+  cursor: pointer;
+}
+#t9x9 td[data-type=system] {
+  pointer-events: none;
+  background-color: transparent;
+}
+#t9x9 td[data-type=user].guide {
+  background-color: #FFCCCC;
+}
+#t9x9 td[data-type=user].error {
+  background-color: #FFCCCC;
+  color: #FF0000;
+}
+#t9x9 td {
+  border: solid 1px #ccc;
+}
+#t3x3 {
+  pointer-events: none;
+}
+#t3x3 td {
+  border: solid 2px #000;
+}
+#t9x9  input{
+  position: absolute;
+  box-sizing: border-box;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  text-align: center;
+  background-color: #FFFFCC;
+}
+#t9x9 td,
+#t9x9 input {
+  font-size: 4vmin;
+}
+@media (max-height: 300px), (max-width: 300px) {
+  #t9x9 td,
+  #t9x9 input {
+    font-size: 12px;
+  }
+}
+@media (max-height: 300px) {
+  body>div {
+    display: none;
+  }
+}
+
+/* confirm */
+body>span {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+ }
+body>span>div {
+  width: 80%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 10px;
+}

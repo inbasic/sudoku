@@ -1,0 +1,17 @@
+{
+  "fullName": "Sudoku Game",
+  "name": "isudoku",
+  "description": "Sudoku is a logic-based, combinatorial number-placement puzzle.",
+  "id": "jid0-JHu89Lli32L9ipo8tYy6gnmMhti@jetpack",
+  "license": "Mozilla Public License, version 2.0",
+  "version": "0.1.0",
+  "author": "InBasic",
+  "lib": "lib",
+  "main": "./lib/firefox.js",
+  "url": "http://add0n.com/sudoku.html",
+  "icon": "data/icons/32.png",
+  "icon64": "data/icons/64.png",
+  "permissions": {
+    "private-browsing": true
+  }
+}

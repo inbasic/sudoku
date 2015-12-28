@@ -1,0 +1,24 @@
+{
+  "name": "Sudoku",
+  "description": "Sudoku is a logic-based, combinatorial number-placement puzzle.",
+  "author": "Inbasic",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "notifications",
+    "browser"
+  ],
+  "app": {
+    "background": {
+      "scripts": [
+        "lib/chrome.js"
+      ]
+    }
+  },
+  "icons": {
+    "16": "data/icons/16.png",
+    "48": "data/icons/48.png",
+    "128": "data/icons/128.png"
+  }
+}
